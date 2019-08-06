@@ -8,9 +8,18 @@
 
 Article.destroy_all
 
+Article.create(
+  title: "testing",
+  content: "a\nbc\ndef"
+)
+
 10.times do
+  content = "#{Faker::Lorem.paragraph(sentence_count: Random.rand(8..10), supplemental: true, random_sentences_to_add: 5)}\n"
+  Random.rand(4..7).times do
+    content += "#{Faker::Lorem.paragraph(sentence_count: Random.rand(8..10), supplemental: true, random_sentences_to_add: 5)}\n"
+  end
   Article.create(
     title: Faker::Movies::HarryPotter.character,
-    content: Faker::Games::Pokemon.move
+    content: content
   )
 end

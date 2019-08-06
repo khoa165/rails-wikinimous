@@ -2,18 +2,18 @@ class ArticlesController < ApplicationController
   before_action :find_article, only: [:show, :edit, :update, :destroy]
 
   def index
-    @articles = article.all
+    @articles = Article.all
   end
 
   def show
   end
 
   def new
-    @article = article.new
+    @article = Article.new
   end
 
   def create
-    new_article = article.create(article_strong_params)
+    new_article = Article.create(article_strong_params)
     redirect_to new_article_path(new_article)
   end
 
@@ -37,6 +37,6 @@ class ArticlesController < ApplicationController
   end
 
   def find_article
-    @article = article.find(params[:id].to_i)
+    @article = Article.find(params[:id].to_i)
   end
 end

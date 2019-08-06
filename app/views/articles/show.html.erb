@@ -1,7 +1,7 @@
 <div class="container">
   <div class="header">
     <h1><%= @article.title %></h1>
-    <%= link_to "Edit article", article_edit_path, class: "btn-elegant" %>
+    <%= link_to "Edit article", edit_article_path, class: "btn-elegant" %>
   </div>
   <div class="details">
     <p><%= @article.details %></p>
@@ -16,6 +16,6 @@
     <% end %>
   </div>
   <%= link_to articles_path, class: "btn-elegant" do %>
-    <i class="fa fa-undo"> Return to list</i>
+    <i class="fa fa-undo"> Return to articles</i>
   <% end %>
 </div>

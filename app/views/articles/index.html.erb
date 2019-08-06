@@ -3,7 +3,7 @@
   <ul>
     <% @articles.each do |article| %>
       <li>
-        <%= link_to article_destroy_path(article), class: "link", method: :delete, data: { confirm: 'Are you sure you want to delete this article?'} do %>
+        <%= link_to article_path(article), class: "link", method: :delete, data: { confirm: 'Are you sure you want to delete this article?'} do %>
           <i class="fa fa-trash"></i>
         <% end %>
         &emsp;
@@ -11,7 +11,7 @@
       </li>
     <% end %>
   </ul>
-  <%= link_to article_new_path, class: "btn-elegant" do %>
+  <%= link_to new_article_path, class: "btn-elegant" do %>
     <!-- <i class="fa fa-backward"> Return to list</i> -->
     <i class="fa fa-plus"> Add new article</i>
   <% end %>

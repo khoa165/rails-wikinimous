@@ -14,7 +14,7 @@ class ArticlesController < ApplicationController
 
   def create
     new_article = Article.create(article_strong_params)
-    redirect_to new_article_path(new_article)
+    redirect_to article_path(new_article)
   end
 
   def edit
@@ -22,7 +22,7 @@ class ArticlesController < ApplicationController
 
   def update
     @article.update(article_strong_params)
-    redirect_to new_article_path(@article)
+    redirect_to article_path(@article)
   end
 
   def destroy

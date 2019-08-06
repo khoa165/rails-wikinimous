@@ -33,7 +33,7 @@ class ArticlesController < ApplicationController
   private
 
   def article_strong_params
-    params.require(:article).permit(:title, :details, :completed)
+    params.require(:article).permit(:title, :content)
   end
 
   def find_article

@@ -4,16 +4,7 @@
     <%= link_to "Edit article", edit_article_path, class: "btn-elegant" %>
   </div>
   <div class="details">
-    <p><%= @article.details %></p>
-  </div>
-  <div class="completed-status">
-    <% if @article.completed %>
-      <input type="checkbox" checked>
-      This article is completed.
-    <% else %>
-      <input type="checkbox">
-      This article is not completed yet.
-    <% end %>
+    <p><%= @article.content %></p>
   </div>
   <%= link_to articles_path, class: "btn-elegant" do %>
     <i class="fa fa-undo"> Return to articles</i>

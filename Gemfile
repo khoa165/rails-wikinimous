@@ -67,3 +67,5 @@ gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 gem "font-awesome-rails"
 # Faker gem
 gem 'faker', '~> 2.1'
+# Simple form
+gem 'simple_form'

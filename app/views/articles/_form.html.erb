@@ -1,4 +1,4 @@
-<%= form_for (article)  do |f| %>
+<%= form_for article do |f| %>
   <div class="form-group">
     <h6><%= f.label :title %></h6>
     <%= f.text_field :title %>
@@ -9,3 +9,12 @@
   </div>
   <%= f.submit class: 'btn btn-outline-primary' %>
 <% end %>
+
+<div class="container">
+  <div class="row">
+    <%= simple_form_for article do |f| %>
+    <%= f.input :title %>
+    <%= f.input :content %>
+    <% end %>
+  </div>
+</div>

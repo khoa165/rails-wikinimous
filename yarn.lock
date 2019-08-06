@@ -2,7 +2,32 @@
 # yarn lockfile v1
 
 
+async@^1.5.0:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
+  integrity sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
+
 bootstrap@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac"
   integrity sha512-rXqOmH1VilAt2DyPzluTi2blhk17bO7ef+zLLPlWvG494pDxcM234pJ8wTc/6R40UWizAIIMgxjvxZg5kmsbag==
+
+depd@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/depd/-/depd-1.1.0.tgz#e1bd82c6aab6ced965b97b88b17ed3e528ca18c3"
+  integrity sha1-4b2Cxqq2ztlluXuIsX7T5SjKGMM=
+
+simple-form@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/simple-form/-/simple-form-1.0.0.tgz#0bee343b052025b0970fd80783d2f8b2bcd248db"
+  integrity sha1-C+40OwUgJbCXD9gHg9L4srzSSNs=
+  dependencies:
+    async "^1.5.0"
+    validator "^4.2.1"
+
+validator@^4.2.1:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-4.9.0.tgz#082ffce2a76148ff07a8e89e9c2ba43aaf12ec4c"
+  integrity sha1-CC/84qdhSP8HqOienCukOq8S7Ew=
+  dependencies:
+    depd "1.1.0"
